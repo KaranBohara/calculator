@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Calc</title>
+<style>
+    .but
+    {
+       width:100px ;
+       height: 50px;
+       text-align: center;
+       background-color:bisque;
+    }
+</style>
+<script>
+function calcu(calculate)
+{
+    calc.res.value=calc.res.value+calculate;
+}
+</script>
+</head>
+<body>
+    <form name="calc">
+<table width="400" height="270" align="center" border="3">
+    <tr>
+        <td style="text-align: center;font-weight:bold ;" height="20" colspan="4">KB-Calculator</td>
+    </tr>
+<tr>
+    <td height="50" colspan="4"><input id="res" style="text-align: right; font-size:larger ; height: 50; width: 420;" type="text"></td>
+</tr>
+<tr>
+    <td><input type="button" id="but9" onclick="calc.res.value += '9'" class="but" value="9"></td>
+    <td><input type="button" id="but8" onclick="calc.res.value += '8'" class="but" value="8"></td>
+    <td><input type="button" id="but7" onclick="calc.res.value += '7'" class="but" value="7"></td>
+    <td><input type="button" id="plus" onclick="calc.res.value += '+'" value="+" class="but" ></td>
+</tr>
+<tr>
+    <td><input type="button" id="but6" onclick="calc.res.value += '6'" class="but" value="6"></td>
+    <td><input type="button" id="but5" onclick="calc.res.value += '5'" class="but" value="5"></td>
+    <td><input type="button" id="but4" onclick="calc.res.value += '4'"class="but" value="4"></td>
+    <td><input type="button" id="minus" onclick="calc.res.value += '-'" value="-" class="but" ></td>
+</tr>
+<tr>
+    <td><input type="button" id="but3" onclick="calc.res.value += '3'" class="but" value="3"></td>
+    <td><input type="button" id="but2" onclick="calc.res.value += '2'" class="but" value="2"></td>
+    <td><input type="button" id="but1" onclick="calc.res.value += '1'" class="but" value="1"></td>
+    <td><input type="button" id="plus" onclick="calc.res.value += '*'" value="*" class="but" ></td>
+</tr>
+<tr>
+    <td><input type="button" id="div" onclick="calc.res.value += '/'" class="but" value="/"></td>
+    <td><input type="button" id="mod" onclick="calc.res.value += '%'" class="but" value="%"></td>
+    <td><input type="button" id="clear" onclick="document.getElementById('res').value=''" class="but" value="AC"></td>
+    <td><input type="button" id="but0" onclick="calc.res.value += '0'" value="0" class="but" ></td>
+</tr>
+<tr>
+    <td><input type="button" id="tan" onclick="calc.res.value += 'tan'" class="but" value="tan"></td>
+    <td><input type="button" id="log" onclick="calc.res.value += 'log'" class="but" value="log"></td>
+    <td><input type="button" id="sin" onclick="calc.res.value += 'sin'"class="but" value="sin"></td>
+    <td><input type="button" id="equal" onclick="calc.res.value =eval(calc.res.value)" value="=" class="but" ></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
